@@ -1,0 +1,13 @@
+# ---------------------------------------------------------------------------
+#
+#         Developed by VertrauterDavid
+#
+#         https://vertrauterdavid.net/
+#         https://github.com/VertrauterDavid/
+#
+# ---------------------------------------------------------------------------
+
+Timers:
+  # Format: identifier: 'seconds;command'
+  hello: '60;say hello'
+  keyall: '3600;crate key giveall keyall 1'
