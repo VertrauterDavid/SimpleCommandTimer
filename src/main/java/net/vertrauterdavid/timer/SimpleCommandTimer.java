@@ -19,7 +19,7 @@ public class SimpleCommandTimer extends JavaPlugin {
     @Override
     public void onEnable() {
         new StatisticUtil(this);
-        new VersionUtil(this);
+        new VersionUtil(this, "SimpleCommandTimer");
 
         saveDefaultConfig();
 
