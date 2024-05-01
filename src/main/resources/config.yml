@@ -11,3 +11,8 @@ Timers:
   # Format: identifier: 'seconds;command'
   hello: '60;say hello'
   keyall: '3600;crate key giveall keyall 1'
+
+Startup:
+  # Format: identifier: 'delay;command'
+  # delay <= 0: command will be executed immediately after the plugin has been loaded
+  welcome: '5;say Welcome to the server!'
