@@ -3,8 +3,6 @@ package net.vertrauterdavid.timer;
 import lombok.Getter;
 import net.vertrauterdavid.timer.util.PlaceholderAPIHook;
 import net.vertrauterdavid.timer.util.Timer;
-import net.vertrauterdavid.timer.util.plugin.StatisticUtil;
-import net.vertrauterdavid.timer.util.plugin.VersionUtil;
 import org.bukkit.Bukkit;
 import org.bukkit.plugin.java.JavaPlugin;
 
@@ -18,9 +16,6 @@ public class SimpleCommandTimer extends JavaPlugin {
 
     @Override
     public void onEnable() {
-        new StatisticUtil(this);
-        new VersionUtil(this, "SimpleCommandTimer");
-
         saveDefaultConfig();
 
         Bukkit.getScheduler().runTaskAsynchronously(this, () -> {
